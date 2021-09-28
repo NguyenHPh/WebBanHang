@@ -1,0 +1,329 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header-row {
+	background-color: #373535;
+	border-bottom: 0.3px solid #726C6C;
+}
+.header-row1{
+	height: 100px;
+	background-color: #373535;
+	border-bottom: 0.3px solid #726C6C;
+}
+*{
+	margin: 0;
+}
+#search{
+	margin-top:40px; 
+	width: 300px;
+	height:30px; 
+	margin-left:100px;
+	border: 0.3px solid wheat;
+	border-radius:8px ;
+	border-right: none;
+	box-shadow: 1px 1px 4px wheat;
+}
+#button-search{
+	background-color: wheat;
+	margin-top:40px;
+	width:50px;
+	height: 30px;
+	margin-left:-14px;
+	border: 0.3px solid wheat;
+	border-radius: 8px;
+	box-shadow: 1px 1px 4px wheat;
+}
+@keyframes hiddenToVisible{
+	from{
+		opacity: 0;
+	}to{
+		opacity: 1;
+	}
+}
+.logo{
+	animation-name: hiddenToVisible;
+	animation-duration: 2s;
+}
+.header-row2{
+	background-color: #373535;
+	text-align: center;
+}
+ul{
+	line-height: 50px;
+}
+ul li{
+	display: inline;
+	padding: 30px;
+}
+ul li a{
+	text-decoration: none;
+	color: whitesmoke;
+	font-family:"fredoka-one";
+	font-weight: bold;
+}
+ul li a:hover{
+	color:burlywood;
+}
+.row.slider1{
+	width: 100%px;
+	background-image: url("../image/watch-bg1.jpg");
+	height: 540px;
+	background-size:100%px;
+	background-repeat: no-repeat;
+}
+.row.slider2{
+	width: 100%px;;
+	height: 540px;
+	background-image: url("../image/watch-bg2.jpg");
+	background-size:100%px;
+	background-repeat: no-repeat;
+}
+.slide1-content{
+	width: 500px;
+	margin-top: 150px;
+	
+}
+.cac-slide{
+	height: 500px;
+	padding: 0;
+	margin: 0;
+	width: 100%px;
+	overflow: hidden;
+}
+.slide1{
+	width: 100%;
+	height: 540px;
+	top:0;
+	left: 0;
+	position: absolute;
+	visibility: hidden;
+	
+}
+.slide1.active{
+	visibility: visible;
+}
+.full-slide{
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+.nut-slide{
+	
+}
+#btn-next{
+	cursor:pointer;
+	position: absolute;
+	left:97%;
+	top: 60%;
+	color: white;
+	font-size: 25px;
+	border: 1px solid white;
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+}
+#btn-prev{
+	cursor:pointer;
+	position: absolute;
+	left: 1%;
+	top: 60%;
+	color: white;
+	font-size: 25px;
+	border: 1px solid white;
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+}
+.fa-chevron-right{
+	margin-left: 12px;
+	margin-top: 6px;
+}
+.fa-chevron-left{
+	margin-left: 8px;
+	margin-top: 6px;
+}
+@keyframes slider-content{
+	from{
+		opacity: 0;
+		transform: translateX(30%);
+	}to{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.slide1-content-slide{
+	animation-name: slider-content;
+	animation-duration: 1s;
+}
+@keyframes bien-mat-ben-trai{
+	from{
+		transform: translateX(0%);
+	}to{
+		transform: translateX(-100%);
+	}
+}
+
+.bien-mat-ben-trai{
+	animation-name: bien-mat-ben-trai;
+	animation-duration: 0.3s;
+}
+
+@keyframes di-vao-ben-trai{
+	from{
+		transform: translateX(100%);
+	}to{
+		transform: translateX(0%);
+	}
+}
+.di-vao-ben-trai{
+	animation-name: di-vao-ben-trai;
+	animation-duration: 0.3s;
+}
+@keyframes bien-mat-ben-phai{
+	from{
+		transform: translateX(0);
+	}to{
+		transform: translateX(100%);
+	}
+}
+.bien-mat-ben-phai{
+	animation-name: bien-mat-ben-phai;
+	animation-duration: 0.3s;
+}
+@keyframes di-vao-ben-phai{
+	from{
+		transform: translateX(-100%);
+	}to{
+		transform: translateX(0%);
+	}
+}
+.di-vao-ben-phai{
+	animation-name: di-vao-ben-phai;
+	animation-duration: 0.3s;
+}
+@keyframes phone{
+	50%{ transform: rotate(30deg);}
+}
+.fa-phone{
+	animation-name: phone;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+.xu-huong-2019-nam{
+	margin-top: 80px;
+	margin-left:220px;
+	width: 500px;
+	height: 300px;
+	background-image: url("../image/dong-ho-xu-huong.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.xu-huong{
+	width: 100%;
+	height: 500px;
+}
+.xu-huong-content{
+	margin: 100px;
+}
+.xu-huong-2019-nu{
+	margin-left: 50px;
+	margin-top: 80px;
+	width: 500px;
+	height: 300px;
+	background-image: url("../image/dong-ho-xu-huong-nu.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+@keyframes xu-huong{
+	from{
+		background-size: 600px;
+	}to{
+		background-size: 610px;
+	}
+}
+.xu-huong-2019-nam:hover{
+	animation-name: xu-huong;
+	animation-duration: 1s;
+	animation-play-state: paused;
+}
+.xu-huong-2019-nu:hover{
+	animation-name: xu-huong;
+	animation-duration: 1s;
+	animation-play-state: paused;
+}
+.dang-ki-nhan-tt-content{
+	margin-left: 140px;
+}
+.form-email{
+	margin: 30px;
+	margin-left: 500px;
+}
+.bd-footer {
+  background: #ff5f6d;
+  background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  height: 80px;
+}
+
+.footer-basic {
+  padding:40px 0;
+  background: #ff5f6d;
+  background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
